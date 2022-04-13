@@ -3,10 +3,9 @@ import random
 import math
 from pygame import mixer
 
-# INITIZALIAZE THE GAME
 pygame.init()
 
-# creat the screen_1
+# screen_1
 screen = pygame.display.set_mode((800, 600))
 
 # background
@@ -41,9 +40,7 @@ for i in range(num_of_enemies):
     enemyX_change.append(0.5)
     enemyY_change.append(50)
 
-# bullet first we make the bullet then we do defien the function  
-# ready means you cant see the bullet on screen
-# fire means the bullet is moving
+
 bulletImg = pygame.image.load('bullet.png')
 bulletX = 0
 bulletY = 480
@@ -94,8 +91,6 @@ def isCollision(enemyX, enemyY, bulletX, bulletY):
 
 
 # game loop_2
-#_7 we call the player function here so that it doesnt disappear 
-#_9 we came here to check when we press the space the bullet get fired 
 running = True
 while running:
     # rgb - red , green , blue_4 and it should be top of everything that everything else goes downbelow 
